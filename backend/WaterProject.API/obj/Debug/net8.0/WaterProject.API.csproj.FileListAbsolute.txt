@@ -60,6 +60,7 @@
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/WaterProject.API.csproj.CoreCompileInputs.cache
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/WaterProject.API.MvcApplicationPartsAssemblyInfo.cs
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/WaterProject.API.MvcApplicationPartsAssemblyInfo.cache
+/Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/WaterProject.API.sourcelink.json
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/staticwebassets.build.json
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/staticwebassets.development.json
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/staticwebassets/msbuild.WaterProject.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -74,3 +75,4 @@
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/WaterProject.API.pdb
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/WaterProject.API.genruntimeconfig.cache
 /Users/test/Desktop/WaterProject/backend/WaterProject.API/obj/Debug/net8.0/ref/WaterProject.API.dll
+/Users/test/Desktop/WaterProject/backend/WaterProject.API/bin/Debug/net8.0/WaterProject.sqlite

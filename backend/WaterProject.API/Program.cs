@@ -13,7 +13,17 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<WaterDbContext>(options => 
     options.UseSqlite(builder.Configuration.GetConnectionString("WaterConnection")));
 
-builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowReact", policy =>
+    {
+        policy.WithOrigins("http://localhost:3001") // 👈 Must be explicit
+              .AllowCredentials()                   // 👈 Must be included
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 
 var app = builder.Build();
 
@@ -24,9 +34,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// As long as it's coming from 3000 we're okay with it
+app.UseCors("AllowReact");
 
-// As long as it's coming from 5173 we're okay with it
-app.UseCors(x => x.WithOrigins("http://localhost:3000"));
+app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
